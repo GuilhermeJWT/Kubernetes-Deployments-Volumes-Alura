@@ -3,7 +3,7 @@ kubectl get rs --watch = vai aparecer os Pods no Replica Set, vai aparecer o nom
 kubectl get deployments =  vai listar todos os deployments
 kubectl rollout history deployment nginx-deployment = vai exibir tipo um controle de versionamento, caso tenha alguma alteração
 kubectl rollout undo deployment nginx-deployment --to-revision=2 = vai voltar a versão anterior
-
+kubectl delete deployment nginx-deployment = deleta um deployment
 
 # Replica Set
 É uma estrutura que vai encapsular um ou mais Pods
