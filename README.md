@@ -13,6 +13,10 @@ Ele pode gerenciar vários Pods ao mesmo tempo
 Quando criamos um Deployments automaticamente criamos um Replica Set
 O mais comum é criar os Pods dentro de um Deployment, seria meio que mais recomendado do que criar no Replica Set, mais funcionaria também
 
+# Volume
+Volumes possuem ciclos de vida independentes dos containers, Porém são dependentes dos Pods
+Se um container morrer ele não morre, mais se o Pod em questão cair ou morrer ele automaticamente morre junto
+
 # Atributo simples Replica Set nos arquivos YAML
 replica: 3  = definimos que será 3 replicas, caso alguma falhe, por padrão é 1
 matchLabels: algum-arquivo = ele tem que ser igual a Label lá em cima, se não ele não consegue se achar
