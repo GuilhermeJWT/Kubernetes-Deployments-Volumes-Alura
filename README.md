@@ -1,2 +1,3 @@
-# Kubernetes-Deployments-Volumes-Alura
-Anotações do segundo Curso de Kubernetes da Alura
+# Replica Set
+É uma estrutura que vai encapsular um ou mais Pods
+Ele pode gerenciar vários Pods no mesmo Momento
