@@ -16,6 +16,8 @@ O mais comum é criar os Pods dentro de um Deployment, seria meio que mais recom
 # Volume
 Volumes possuem ciclos de vida independentes dos containers, Porém são dependentes dos Pods
 Se um container morrer ele não morre, mais se o Pod em questão cair ou morrer ele automaticamente morre junto
+PersistentVolumes possuem ciclos de vida independentes de Pods
+É necessário um PersistentVolumeClaim para acessar um PersistentVolume
 
 # Atributo simples Replica Set nos arquivos YAML
 replica: 3  = definimos que será 3 replicas, caso alguma falhe, por padrão é 1
