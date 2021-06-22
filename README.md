@@ -1,4 +1,4 @@
-# Comando
+# Comandos
 kubectl get rs --watch = vai aparecer os Pods no Replica Set, vai aparecer o nome, e os numeros de replicas
 kubectl get deployments =  vai listar todos os deployments
 kubectl rollout history deployment nginx-deployment = vai exibir tipo um controle de versionamento, caso tenha alguma alteração
@@ -18,6 +18,9 @@ Volumes possuem ciclos de vida independentes dos containers, Porém são depende
 Se um container morrer ele não morre, mais se o Pod em questão cair ou morrer ele automaticamente morre junto
 PersistentVolumes possuem ciclos de vida independentes de Pods
 É necessário um PersistentVolumeClaim para acessar um PersistentVolume
+
+# Storage Classes
+Storage Classes fornecem dinamismo para criação de PersistentVolumes conforme demanda
 
 # Atributo simples Replica Set nos arquivos YAML
 replica: 3  = definimos que será 3 replicas, caso alguma falhe, por padrão é 1
