@@ -26,6 +26,12 @@ Storage Classes fornecem dinamismo para criação de PersistentVolumes conforme 
 Podem ser usados quando estados devem ser persistido
 Usam PersistentVolumes e PersistentVolumeClaims para persistência de dados
 
+# Probes
+Torna visível ao Kubernetes que uma aplicação não está se comportando da maneira esperada
+
+# Liveness Probe
+Ele indicará falha caso o código de retorno seja menor que 200 ou maior/igual a 400
+
 # Atributo simples Replica Set nos arquivos YAML
 replica: 3  = definimos que será 3 replicas, caso alguma falhe, por padrão é 1
 matchLabels: algum-arquivo = ele tem que ser igual a Label lá em cima, se não ele não consegue se achar
