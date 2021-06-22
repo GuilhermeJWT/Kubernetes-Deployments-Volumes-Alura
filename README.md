@@ -22,6 +22,10 @@ PersistentVolumes possuem ciclos de vida independentes de Pods
 # Storage Classes
 Storage Classes fornecem dinamismo para criação de PersistentVolumes conforme demanda
 
+# Stateful Set
+Podem ser usados quando estados devem ser persistido
+Usam PersistentVolumes e PersistentVolumeClaims para persistência de dados
+
 # Atributo simples Replica Set nos arquivos YAML
 replica: 3  = definimos que será 3 replicas, caso alguma falhe, por padrão é 1
 matchLabels: algum-arquivo = ele tem que ser igual a Label lá em cima, se não ele não consegue se achar
